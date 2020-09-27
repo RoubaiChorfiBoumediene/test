@@ -1,0 +1,12 @@
+
+  <div>
+    <h1>welcome my app </h1>
+      <form action="/email" method="post">
+          <input NgModel="subject" type="text" id="subject" placeholder="Subject"><br>
+          <input NgModel="email" type="email" id="email" placeholder="Email"><br>
+          <textarea NgModel="text" id="text" cols="30" rows="30"></textarea>
+          <button type="submit"  ngSubmit="sendMail()">Send Message</button>
+          <h1>{{response}}</h1>
+      </form>
+  </div>
+  
