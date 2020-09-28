@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const log = console.log;
 const sendMail = require('./mail');
-const PORT = 8080;
+const PORT = 4200;
 const http = require('http');
 // https
 fs = require('fs');
@@ -43,4 +43,4 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-app.listen(PORT, () => log('server is starting on port', 8080));
+app.listen(PORT, () => log('server is starting on port', PORT));
